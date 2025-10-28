@@ -19,9 +19,10 @@ library(countrycode)
 ## read in data
 
 ```{r}
-HDI <- read_csv(here::here("homework_4", "HDR21-22_Composite_indices_complete_time_series.csv"),
-                       locale = locale(encoding = "latin1"),
+HDI <- read_csv(here::here("homework_4",
+                  "HDR21-22_Composite_indices_complete_time_series.csv"),
                        na = " ", skip=0)
+
 
 World <- st_read("homework_4/World_Countries_(Generalized)/World_Countries__Generalized_.shp")
 
